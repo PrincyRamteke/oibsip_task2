@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 31.25rem;
+  width: 100%;
+  background-color: #000000;
+  margin: 0;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  height: 31.25rem;
+  background: url(elon.jpg) 0% 0% / cover no-repeat;
+  position: relative;
+  padding-left: 6.25rem;
+  margin: 0 auto;
+  width: 62.5rem;
+}
+
+h1 {
+  margin-top: 5.87rem;
+  margin-left: -2.81rem;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 3.125rem;
+  font-weight: 200;
+  letter-spacing: 1rem;
+}
+
+.quote {
+  margin-top: 0.69rem;
+  margin-left: -2.625rem;
+  padding-right: 44.375rem;
+}
+
+.INquote {
+  margin: 0;
+  color: #ffb938;
+  font-family: "Playfair Display", serif;
+  font-size: 1.43rem;
+  font-weight: 200;
+  line-height: 150%;
+}
+
+.writer {
+  color: #c3c3c3;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.biography {
+  width: 62.5rem;
+  height: 18.75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.TXT {
+  flex: 1.5;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.bioTxt {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 180%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.siteLink {
+  font-weight: 700;
+  font-style: bold;
+  padding-bottom: 3rem;
+}
+
+.link a {
+  background-color: #ca8431;
+  color: #000000;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 0.313rem 0.625rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: underline;
+  color: #2988ff;
+}
+
+.imgSlide {
+  flex: 1;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container {
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  width: 18.75rem;
+  height: 12.5rem;
+}
+
+.container .image_img {
+  flex: 0 0 18.75rem;
+  width: 18.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 2rem;
+  color: #000000;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
+
+.image {
+  position: relative;
+  display: block;
+  width: 18.75rem;
+  height: 10.5rem;
+}
+
+.image_img {
+  width: 100%;
+  height: 10.5rem;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18.75rem;
+  height: 10.5rem;
+  background: #00000099;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.125rem;
+  margin-top: 0.44rem;
+}
+
+.image_description {
+  font-size: 0.94rem;
+  padding-left: 0.875rem;
+}
+
+#bottomLine {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #ffb938;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .biography {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .bioTxt {
+    padding: 1.5rem;
+    padding-left: 8rem;
+   }
+}
